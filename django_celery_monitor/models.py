@@ -4,12 +4,12 @@ from __future__ import absolute_import, unicode_literals
 from time import time, mktime, gmtime
 
 from django.db import models
+from django.utils.encoding import python_2_unicode_compatible
 from django.utils.translation import ugettext_lazy as _
 from django.conf import settings
 
 from celery import states
 from celery.events.state import heartbeat_expires
-from celery.five import python_2_unicode_compatible
 
 from . import managers
 
