@@ -52,9 +52,10 @@ class WorkerStateQuerySet(ExtendedQuerySet):
                 hostname=hostname,
                 last_update__gte=interval,
             )
-            if recent_worker_updates.exists():
+            latest_worker_update = recent_worker_updates.first()
+            if latest_worker_update is not None:
                 # if yes, get the latest update and move on
-                obj = recent_worker_updates.get()
+                obj = latest_worker_update
             else:
                 # if no, update the worker state and move on
                 obj, _ = self.select_for_update_or_create(
