@@ -7,11 +7,7 @@ from celery.events.state import Task
 from celery.utils.time import maybe_timedelta
 from django.db import models, router, transaction
 
-import logging
-
 from .utils import Now
-
-logger = logging.getLogger()
 
 
 class ExtendedQuerySet(models.QuerySet):
