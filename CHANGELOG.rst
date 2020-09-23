@@ -4,6 +4,10 @@
  Change history
 ================
 
+.. _version-1.1.2f:
+
+- Package Django 2.2 compatibilty fixes
+
 .. _version-1.1.2:
 
 :release-date: 2017-05-18 11:30 a.m. UTC+2
