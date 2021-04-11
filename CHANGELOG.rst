@@ -4,6 +4,11 @@
  Change history
 ================
 
+.. _version-1.1.2+dj22fixes:
+
+- Attempt to make version PEP-440 compliant
+
+
 .. _version-1.1.2f:
 
 - Package Django 2.2 compatibilty fixes
